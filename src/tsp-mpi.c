@@ -489,16 +489,16 @@ int main(int argc, char *argv[]) {
       if (i < n_cities - 1)
 	printf(",");
 
+
+
+    }
+    printf(".\n");
+  }
 	/*mmg*/
 	//fin mesura de tiempo
 	end = MPI_Wtime();
 	printf("El tiempo de ejecución fue %f\n", end-start);
 	/*mmg*/
-
-    }
-    printf(".\n");
-  }
-
   rc = MPI_Finalize();
   return 0;
 }
