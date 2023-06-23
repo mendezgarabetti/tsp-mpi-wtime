@@ -1,6 +1,7 @@
 // Ultima modificación 23-06-2023 
 // Miguel Méndez-Garabetti
 // mendezgarabetti@fosshlab.org
+// Ahora falta incorporar comentarios de funcionamiento interno y parametrización de la MH
 
 #include <stddef.h>
 #include <stdio.h>
