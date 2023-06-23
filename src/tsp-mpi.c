@@ -489,21 +489,19 @@ int main(int argc, char *argv[]) {
   if (id == best_task_id) {
     printf("Fitness of the best route found is %f.\n", best_fit);
     printf("The best route found is ");
-    for (size_t i = 0; i < n_cities; ++i) {
-      printf("%d", pops[my_best_path[0]][i]);
-      if (i < n_cities - 1)
-	printf(",");
-
-
-
-    }
-    printf(".\n");
-  }
-	/*mmg*/
+    /*mmg*/
 	//fin mesura de tiempo
 	end = MPI_Wtime();
 	printf("El tiempo de ejecución fue %f\n", end-start);
 	/*mmg*/
+    for (size_t i = 0; i < n_cities; ++i) {
+      printf("%d", pops[my_best_path[0]][i]);
+      if (i < n_cities - 1)
+	printf(",");
+    }
+    printf(".\n");
+  }
+
   rc = MPI_Finalize();
   return 0;
 }
