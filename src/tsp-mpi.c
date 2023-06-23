@@ -1,3 +1,7 @@
+// Ultima modificación 23-06-2023 
+// Miguel Méndez-Garabetti
+// mendezgarabetti@fosshlab.org
+
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
