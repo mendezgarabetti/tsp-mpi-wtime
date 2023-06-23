@@ -303,6 +303,7 @@ void check_input(float mutation_prob, size_t pop_size, float migration_prob, siz
 
 int main(int argc, char *argv[]) {
   int id,ntasks,rc;
+
   MPI_Status status;
 
   rc=MPI_Init(&argc,&argv);
@@ -312,6 +313,11 @@ int main(int argc, char *argv[]) {
   }
   rc=MPI_Comm_size(MPI_COMM_WORLD,&ntasks);
   rc=MPI_Comm_rank(MPI_COMM_WORLD,&id);
+  
+  /*mmg:  inicio de tiempo de conteo */
+  double start, end;
+  start = MPI_Wtime();
+  /*mmg*/
 
   /* create a type for struct cords */
   const int nitems = 2;
@@ -454,6 +460,7 @@ int main(int argc, char *argv[]) {
 
   printf("Process %d has a final best fitness of %f.\n", id, best_fit);
 
+
   // Process 0 will find the best fitness overall
   float *sub_fits = NULL;
   if (id == 0) {
@@ -481,6 +488,13 @@ int main(int argc, char *argv[]) {
       printf("%d", pops[my_best_path[0]][i]);
       if (i < n_cities - 1)
 	printf(",");
+
+	/*mmg*/
+	//fin mesura de tiempo
+	end = MPI_Wtime();
+	printf("El tiempo de ejecución fue %f\n", end-start);
+	/*mmg*/
+
     }
     printf(".\n");
   }
