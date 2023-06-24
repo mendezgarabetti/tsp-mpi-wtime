@@ -1,0 +1,35 @@
+
+########################################################################
+#      Date:           Fri 23 Jun 2023 08:29:13 PM PDT
+#    Job ID:           2327862.v-qsvr-1.aidevcloud
+#      User:           u195786
+# Resources:           cput=75:00:00,neednodes=2:ppn=2,nodes=2:ppn=2,walltime=06:00:00
+########################################################################
+
+
+Preparing for a distributed job.
+Mother superior is s001-n019.
+Machine file is /var/spool/torque/aux//2327862.v-qsvr-1.aidevcloud
+Contents of the machine file:
+s001-n019
+s001-n019
+s001-n072
+s001-n072
+
+
+mpirun -machinefile /var/spool/torque/aux//2327862.v-qsvr-1.aidevcloud ./tsp-mpi ../run/input.dat 0.75 100 10000 0.1 10
+Process 2 has a final best fitness of 0.744671.
+Process 1 has a final best fitness of 0.744671.
+Process 0 has a final best fitness of 0.744671.
+Process 3 has a final best fitness of 0.744671.
+Fitness of the best route found is 0.744671.
+The best route found is El tiempo de ejecución fue 0.626948
+6,11,1,19,4,0,12,17,14,10,8,13,18,15,3,2,5,7,9,16.
+mpirun -np 2 -machinefile /var/spool/torque/aux//2327862.v-qsvr-1.aidevcloud ./tsp-mpi ../run/input.dat 0.75 100 10000 0.1 10
+mpirun -np 16 -machinefile /var/spool/torque/aux//2327862.v-qsvr-1.aidevcloud ./tsp-mpi ../run/input.dat 0.75 100 10000 0.1 10
+
+########################################################################
+# End of output for job 2327862.v-qsvr-1.aidevcloud
+# Date: Fri 23 Jun 2023 08:29:41 PM PDT
+########################################################################
+

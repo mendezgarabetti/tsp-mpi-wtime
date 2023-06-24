@@ -1,0 +1,19 @@
+
+########################################################################
+#      Date:           Fri 23 Jun 2023 06:45:17 PM PDT
+#    Job ID:           2327817.v-qsvr-1.aidevcloud
+#      User:           u195786
+# Resources:           cput=75:00:00,neednodes=2:ppn=2,nodes=2:ppn=2,walltime=06:00:00
+########################################################################
+
+Launching the parallel job from mother superior s001-n065...
+Hello world from host s001-n015 (rank 2)!
+Hello world from host s001-n015 (rank 3)!
+Hello world from host s001-n065 (rank 0)!
+Hello world from host s001-n065 (rank 1)!
+
+########################################################################
+# End of output for job 2327817.v-qsvr-1.aidevcloud
+# Date: Fri 23 Jun 2023 06:45:27 PM PDT
+########################################################################
+

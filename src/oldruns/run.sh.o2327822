@@ -1,0 +1,46 @@
+
+########################################################################
+#      Date:           Fri 23 Jun 2023 06:51:13 PM PDT
+#    Job ID:           2327822.v-qsvr-1.aidevcloud
+#      User:           u195786
+# Resources:           cput=75:00:00,neednodes=2:ppn=2,nodes=2:ppn=2,walltime=06:00:00
+########################################################################
+
+
+Preparing for a distributed job.
+Mother superior is s001-n015.
+Machine file is /var/spool/torque/aux//2327822.v-qsvr-1.aidevcloud
+Contents of the machine file:
+s001-n015
+s001-n015
+s001-n016
+s001-n016
+
+
+Starting calculation
+Process 12 has a final best fitness of 0.721729.
+Process 8 has a final best fitness of 0.723864.
+Process 14 has a final best fitness of 0.721729.
+Process 6 has a final best fitness of 0.710519.
+Process 13 has a final best fitness of 0.721729.
+Process 2 has a final best fitness of 0.711027.
+Process 11 has a final best fitness of 0.721729.
+Process 1 has a final best fitness of 0.721729.
+Process 7 has a final best fitness of 0.723864.
+Process 10 has a final best fitness of 0.723864.
+Process 3 has a final best fitness of 0.711027.
+Process 4 has a final best fitness of 0.710519.
+Process 0 has a final best fitness of 0.721729.
+Process 9 has a final best fitness of 0.723864.
+Process 15 has a final best fitness of 0.721729.
+Process 5 has a final best fitness of 0.710519.
+Fitness of the best route found is 0.710519.
+The best route found is El tiempo de ejecución fue 0.638314
+15,18,13,8,10,14,0,12,17,3,2,5,7,16,9,4,19,1,11,6.
+End of calculation
+
+########################################################################
+# End of output for job 2327822.v-qsvr-1.aidevcloud
+# Date: Fri 23 Jun 2023 06:51:23 PM PDT
+########################################################################
+
